@@ -15,6 +15,6 @@
   - [ ] 3.2 双栏分布 
   
   参考链接：
-  [dumi](https://d.umijs.org/zh-CN)
-  [mint-ui](https://github.com/ElemeFE/mint-ui)
-  [element-ui](https://github.com/ElemeFE/element)
+  ##### [dumi](https://d.umijs.org/zh-CN)
+  ##### [mint-ui](https://github.com/ElemeFE/mint-ui)
+  ##### [element-ui](https://github.com/ElemeFE/element)
