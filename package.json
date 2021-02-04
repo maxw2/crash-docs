@@ -1,0 +1,27 @@
+{
+  "name": "crash-docs",
+  "version": "0.0.1",
+  "description": "创建一个最基础的文档工具 熟悉webpack使用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:docs": "cross-env NODE_ENV=development webpack --config build/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxw2/crash-docs.git"
+  },
+  "author": "maxw2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxw2/crash-docs/issues"
+  },
+  "homepage": "https://github.com/maxw2/crash-docs#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
