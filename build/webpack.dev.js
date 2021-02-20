@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-// const DocThemePlugin = require('../plugin/docs-theme-plugins/index')
+const DocsVuePlugin = require('../plugin/docs-vue-plugins/index.ts')
 
 module.exports = {
     mode: process.env.NODE_ENV,
@@ -28,9 +28,13 @@ module.exports = {
     },
     // 
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'docs/public/index.html',
+            favicon: 'docs/public/favicon.ico'
+        }),
         new VueLoaderPlugin(),
-        // new DocThemePlugin()
+        new DocsVuePlugin()
     ],
     // 启动服务器
     devServer: {
@@ -38,6 +42,6 @@ module.exports = {
         compress: true,
         port: 3000,
         hot: true,
-        open: true
+        // open: true
     }
 }
